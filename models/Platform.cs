@@ -14,5 +14,11 @@ namespace models
         public string Specificaties { get; set; }
         public int ProducentId { get; set; }
         public Nullable<decimal> Adviesprijs { get; set; }
+
+        //navigational properties
+
+        public HardwareProducent Producent { get; set; }
+
+        public ICollection<Game> Games { get; set; }
     }
 }

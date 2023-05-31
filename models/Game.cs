@@ -15,5 +15,14 @@ namespace models
         public int MinimumLeeftijd { get; set; }
         public Nullable<decimal> Prijs { get; set; }
         public double Rating { get; set; }
+        public int UitgeverId { get; set; }
+        public int OntwikkelaarId { get; set; }
+
+        //navigational properties
+        public Uitgever Uitgever { get; set; }
+
+        public Ontwikkelaar Ontwikkelaar { get; set; }
+        public ICollection<Platform> Platforms { get; set; }
+        public ICollection<Game> Games { get; set; }
     }
 }
