@@ -6,5 +6,6 @@ namespace models
 {
     public class GamePlatform
     {
+        public
     }
 }

@@ -6,5 +6,10 @@ namespace models
 {
     public class GenreGame
     {
+        //properties
+        public int Id { get; set; }
+
+        public int GenreId { get; set; }
+        public int GameId { get; set; }
     }
 }

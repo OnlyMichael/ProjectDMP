@@ -6,5 +6,10 @@ namespace models
 {
     public class Ontwikkelaar
     {
+        //properties
+        public int Id { get; set; }
+
+        public string Naam { get; set; }
+        public string Land { get; set; }
     }
 }
