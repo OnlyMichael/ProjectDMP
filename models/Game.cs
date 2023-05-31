@@ -24,5 +24,16 @@ namespace models
         public Ontwikkelaar Ontwikkelaar { get; set; }
         public ICollection<Platform> Platforms { get; set; }
         public ICollection<Game> Games { get; set; }
+
+        public Game()
+        {
+            Platforms = new List<Platform>();
+            Games = new List<Game>();
+        }
+
+        public override string ToString()
+        {
+            return $"{Id} - {Naam} - {Beschrijving} - {MinimumLeeftijd} - {Prijs} - {Rating} - {UitgeverId} - {OntwikkelaarId}";
+        }
     }
 }
