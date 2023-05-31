@@ -11,5 +11,10 @@ namespace models
 
         public int GenreId { get; set; }
         public int GameId { get; set; }
+
+        //navigational properties
+        public Game Game { get; set; }
+
+        public Genre Genre { get; set; }
     }
 }
